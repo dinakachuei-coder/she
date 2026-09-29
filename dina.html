@@ -1,0 +1,205 @@
+<!DOCTYPE html><html lang="fa" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>داشبورد زندگی و رشد</title>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f3ee;--card:#fffdf9;--ink:#26221e;--mut:#8a8178;--line:#e7e0d6;--c1:#8b7d6b;--c2:#7d9080;--c3:#6f8aa3;--c4:#b98a8f;--c5:#b59a62;--c6:#9a86a8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme=light]){--bg:#1b1917;--card:#252220;--ink:#efe9e1;--mut:#9b9288;--line:#39342f}}
+:root[data-theme=dark]{--bg:#1b1917;--card:#252220;--ink:#efe9e1;--mut:#9b9288;--line:#39342f}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Vazirmatn,Tahoma,sans-serif;font-weight:300;line-height:1.7}
+#app{max-width:980px;margin:auto;padding:16px 14px 110px}
+h1{font-weight:300;font-size:26px;margin:4px 0}h2{font-weight:600;font-size:14px;margin:0 0 10px;color:var(--c);display:flex;justify-content:space-between;align-items:center;letter-spacing:.3px}
+.mut,small{color:var(--mut);display:block;font-size:12px}.q{font-size:13px;color:var(--mut);font-style:italic}
+.grid{display:grid;gap:12px}@media(min-width:800px){.grid{grid-template-columns:1fr 1fr}.wide{grid-column:1/-1}}
+.card{background:var(--card);border:1px solid var(--line);border-top:2px solid var(--c);border-radius:14px;padding:14px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0;scrollbar-width:none}
+button{font:inherit;cursor:pointer;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:10px 16px;min-height:44px;white-space:nowrap}
+button.on{background:var(--ink);color:var(--bg)}button.pri{background:var(--c,var(--ink));color:#fff;border:0;width:100%;border-radius:12px;margin-top:14px}
+.x{border:0;background:none;color:var(--mut);padding:0 8px;min-height:30px}.sm{padding:4px 12px;min-height:34px;font-size:12px}
+.row{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px dashed var(--line)}.row>div{flex:1}.row:last-child{border:0}
+.bar{height:6px;background:var(--line);border-radius:9px;overflow:hidden;margin:6px 0}.bar i{display:block;height:100%;background:var(--c)}
+.ch{width:100%;height:auto;max-height:150px}.ch text{fill:var(--mut);font-size:9px}
+.tl{padding:7px 10px;margin:5px 0;border-radius:10px;border-right:3px solid var(--c1);background:color-mix(in srgb,var(--c1) 10%,transparent);font-size:14px}
+.tl.f{border-color:var(--c4);background:color-mix(in srgb,var(--c4) 14%,transparent)}.tl.z{border-color:var(--c2);background:color-mix(in srgb,var(--c2) 12%,transparent)}
+.st{display:flex;gap:16px;flex-wrap:wrap}.st b{font-size:22px;font-weight:600;display:block}
+nav{position:fixed;bottom:0;left:0;right:0;background:var(--card);border-top:1px solid var(--line);display:flex;justify-content:center;gap:2px;padding:6px 6px calc(6px + env(safe-area-inset-bottom,0px))}
+nav button{border:0;flex:1;max-width:120px;font-size:12px;padding:6px}nav button.on{background:var(--bg);color:var(--ink);font-weight:600}
+#sh{position:fixed;inset:0;background:#0007;display:none;align-items:flex-end;justify-content:center;z-index:9}
+#sh>div{background:var(--card);width:100%;max-width:520px;border-radius:20px 20px 0 0;padding:18px 18px calc(18px + env(safe-area-inset-bottom,0px));max-height:88vh;overflow:auto}
+label{font-size:12px;color:var(--mut);display:block;margin-top:10px}input,select,textarea{width:100%;font:inherit;padding:11px;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:13px}td,th{padding:6px 4px;border-bottom:1px solid var(--line);text-align:right}th{font-weight:600;color:var(--mut)}
+.up{color:var(--c2)}.dn{color:var(--c4)}
+.tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}@media(min-width:800px){.tiles{grid-template-columns:repeat(3,1fr)}}.tile{border-radius:14px;padding:22px 14px;white-space:normal;border-top:2px solid var(--c);font-size:15px}.fab{position:fixed;left:16px;bottom:calc(74px + env(safe-area-inset-bottom,0px));width:56px;height:56px;padding:0;border-radius:50%;background:var(--ink);color:var(--bg);font-size:28px;z-index:5;box-shadow:0 4px 14px #0004}.fg{display:grid;grid-template-columns:1fr 1fr;gap:0 10px}.in summary{list-style:none;cursor:pointer;padding:12px;border:1px dashed var(--line);border-radius:12px;text-align:center;margin:6px 0 10px;color:var(--c)}.in[open] summary{margin-bottom:0}.tile small{margin-top:4px}h2.wide{grid-column:1/-1;margin:8px 0 0}</style></head><body><div id="app"></div><button class="fab" onclick="qa()">＋</button><nav id="nv"></nav><div id="sh" onclick="if(event.target==this)this.style.display='none'"><div id="fm"></div></div>
+<script>
+const K='lgd1',td=new Date().toLocaleDateString('sv-SE'),$=s=>document.querySelector(s),fa=n=>(+n).toLocaleString('fa-IR',{maximumFractionDigits:1}),uid=()=>Date.now()+Math.random().toString(36).slice(2,5);
+const fd=d=>new Date(d+'T12:00').toLocaleDateString('fa-IR-u-ca-persian',{day:'numeric',month:'short'});
+const ago=d=>Math.round((new Date(td)-new Date(d))/864e5),inw=(d,a)=>d&&ago(d)>=a*7&&ago(d)<a*7+7;
+const dys=n=>[...Array(n)].map((_,i)=>{const x=new Date();x.setDate(x.getDate()-(n-1-i));return x.toLocaleDateString('sv-SE')});
+let S={};try{S=JSON.parse(localStorage.getItem(K))||{}}catch(e){}
+S=Object.assign({tasks:[],expenses:[],weights:[],books:[],pages:[],english:[],ideas:[],events:[],workouts:[],habits:{},notes:[],goals:[],reviews:[],research:[],daily:[],cfg:{tf:'m',en:1,budget:0,start:td}},S);
+const save=()=>{try{localStorage.setItem(K,JSON.stringify(S))}catch(e){}};
+const opts=a=>a.map(x=>x);const LV=['must|حتماً انجام بده','should|بهتر است','opt|اختیاری'],LN={must:'حتماً',should:'بهتر است',opt:'اختیاری'};
+const CAT=['food|غذا','transport|رفت‌وآمد','education|آموزش','fashion|مد','entertainment|سرگرمی','subscriptions|اشتراک‌ها','shopping|خرید','other|سایر'];
+const SK=['گرامر','لغت','صحبت','شنیدن','خواندن','نوشتن','تلفظ','ویدیو','کتاب','دوره','تکلیف','عبارت جدید'];
+const ST=['ایده','پیش‌نویس','برنامه‌ریزی‌شده','منتشرشده'],RS=['برنامه','در حال','تمام'];
+const HB=['روتین صبح','اسکین‌کر','مراقبت مو','دوش','مرتب‌کردن اتاق','مطالعه','انگلیسی','ورزش','روتین شب','خواب ۱۰–۱۱'];
+const MB=['سرمایه‌گذاری','مدیریت ریسک','حسابداری','اقتصاد','بازارهای مالی','مالی','بازاریابی','بیزنیس مد','لوکس','تاریخ/عمومی','پادکست','Spanish'];
+const F={
+task:{n:'کار جدید',l:'tasks',f:[['t','عنوان'],['lvl','اولویت','sel',LV],['due','مهلت','date']]},
+expense:{n:'تراکنش',l:'expenses',f:[['t','شرح'],['amt','مبلغ','number'],['cat','دسته','sel',CAT],['kind','نوع','sel',['exp|هزینه','inc|درآمد','sav|پس‌انداز']],['pay','روش پرداخت','sel',['کارت','نقد','آنلاین']]]},
+weight:{n:'وزن',l:'weights',f:[['kg','وزن (kg)','number']]},
+book:{n:'کتاب جدید',l:'books',f:[['title','عنوان'],['author','نویسنده'],['total','تعداد کل صفحات','number'],['page','صفحه فعلی','number'],['target','تاریخ هدف اتمام','date'],['note','یادداشت','ta']]},
+page:{n:'به‌روزرسانی صفحه',f:[['book','کتاب','sel',()=>S.books.map(b=>b.id+'|'+b.title)],['page','الان در صفحه','number']]},
+english:{n:'منبع انگلیسی',l:'english',f:[['title','عنوان'],['skill','مهارت','sel',SK],['link','لینک','url'],['st','وضعیت','sel',['0|برنامه','1|در حال','2|تمام']],['vocab','لغات/عبارت‌های جدید','ta']],k:'res'},
+idea:{n:'ایده محتوا',l:'ideas',f:[['t','ایده'],['kind','نوع','sel',['اینستاگرام','استوری','لینکدین','ریسرچ']],['plan','تاریخ برنامه','date']]},
+event:{n:'رویداد',l:'events',f:[['t','عنوان'],['date','تاریخ','date'],['loc','مکان'],['kind','نوع','sel',['مد','نمایشگاه','نتورکینگ','سخنرانی','ورکشاپ','فرهنگی']],['link','لینک','url'],['why','چرا جالب است','ta']]},
+workout:{n:'تمرین',l:'workouts',f:[['type','نوع','sel',['پیلاتس','موبیلیتی','قدرتی/تناسب']],['min','مدت (دقیقه)','number'],['ok','وضعیت','sel',['1|انجام شد','0|رد شد']],['note','تمرین‌ها/یادداشت','ta']]},
+habit:{n:'عادت امروز',f:[['h','عادت','sel',HB]]},
+note:{n:'یادداشت',l:'notes',f:[['t','یادداشت','ta']]},
+goal:{n:'هدف',l:'goals',f:[['t','عنوان'],['term','بازه','sel',['long|بلندمدت','mid|میان‌مدت','short|کوتاه‌مدت']],['why','چرا مهم است','ta'],['dl','مهلت','date'],['cur','وضعیت فعلی'],['tgt','وضعیت هدف'],['ms','مراحل','ta'],['next','قدم بعدی'],['p','پیشرفت %','number']]},
+daily:{n:'ثبت روزانه',l:'daily',f:[['cin','کالری دریافتی','number'],['cout','کالری سوزانده','number'],['water','آب (لیوان)','number'],['sup','مکمل‌ها']]},
+research:{n:'ریسرچ/یادگیری',l:'research',f:[['topic','موضوع','sel',MB],['src','منبع'],['key','نکته کلیدی','ta'],['car','ارتباط با مسیر شغلی'],['cont','ایده محتوا']]},
+review:{n:'مرور هفتگی',l:'reviews',f:[['a','چه کردم','ta'],['m','چه جا ماندم و چرا','ta'],['w','دستاوردها','ta'],['e','چه چیزی انرژی گرفت','ta'],['nx','اولویت‌های هفته بعد','ta']]}};
+const QA=['task','expense','weight','book','page','english','idea','event','workout','habit','note'];
+function open(t){const f=F[t];let h=`<h2 style="--c:var(--c1)">${f.n}</h2>`;f.f.forEach(([k,l,ty,o])=>{h+=`<label>${l}</label>`;if(ty=='sel')h+=`<select name=${k}>${(typeof o=='function'?o():o).map(x=>{const[a,b]=x.split('|');return`<option value="${a}">${b||a}</option>`}).join('')}</select>`;else if(ty=='ta')h+=`<textarea name=${k} rows=2></textarea>`;else h+=`<input name=${k} type=${ty||'text'} ${ty=='number'?'step=any inputmode=decimal':''} ${ty=='date'&&t!='event'&&t!='goal'&&t!='book'?`value=${td}`:''}>`});
+$('#fm').innerHTML=h+`<button class=pri onclick="sub('${t}')">ذخیره</button>`;$('#sh').style.display='flex'}
+function sub(t,r){const f=F[t],v={};(r||$('#fm')).querySelectorAll('[name]').forEach(e=>v[e.name]=e.type=='number'&&e.value!==''?+e.value:e.value);
+if(t=='cls'){const p=x=>{const[a,b]=x.split(':');return+a+b/60};S.cfg.ex.push({id:uid(),d:+v.day,s:p(v.s),e:p(v.e),n:v.n||'کلاس'})}else if(t=='page'){const b=S.books.find(x=>x.id==v.book);if(!b)return;S.pages.push({id:uid(),d:td,n:Math.max(0,v.page-b.page)});b.page=v.page;if(b.total&&v.page>=b.total)b.done=1}
+else if(t=='habit'){tg(v.h)}else{const o=Object.assign({id:uid(),d:td},v);if(f.k)o.kind=f.k;if(t=='english'){o.st=+o.st}if(t=='idea')o.st=0;if(t=='expense'&&!o.amt)return;S[f.l].push(o)}
+save();$('#sh').style.display='none';R()}
+const tg=h=>{const a=S.habits[td]=S.habits[td]||[];const i=a.indexOf(h);i<0?a.push(h):a.splice(i,1)};
+function A(a,l,i){const o=l&&S[l].find(x=>x.id==i);
+if(a=='hab')tg(l);else if(a=='del')S[l]=S[l].filter(x=>x.id!=i);else if(a=='tog'){o.done=!o.done;o.dd=o.done?td:null}
+else if(a=='cyc'){const n=l=='ideas'?4:3;o.st=((o.st||0)+1)%n;if(l=='ideas'&&o.st==3)o.pd=td}
+else if(a=='gp'){o.p=Math.max(0,Math.min(100,(o.p||0)+ +document.getElementById('x').dataset.v));o.dd=o.p>=100?td:null}
+save();R()}
+const gp=(i,v)=>{const o=S.goals.find(x=>x.id==i);o.p=Math.max(0,Math.min(100,(+o.p||0)+v));o.dd=o.p>=100?td:null;save();R()};
+const sess=s=>{S.english.push({id:uid(),d:td,skill:s,kind:'ses'});save();R()};
+const card=(t,c,b,x='')=>`<section class="card" style="--c:var(--${c})"><h2>${t}<span>${x}</span></h2>${b}</section>`;
+const bar=p=>`<div class=bar><i style="width:${Math.min(100,Math.max(0,p||0))}%"></i></div>`;
+const row=(l,i,m,s,e='')=>`<div class=row><div>${m}<small>${s||''}</small></div>${e}<button class=x onclick="A('del','${l}','${i}')">×</button></div>`;
+const btn=(t,t2)=>`<button class="sm" onclick="open('${t}')">＋ ${t2||F[t].n}</button>`;
+function line(v,lb,c){if(v.length<2)return'<small>برای نمودار حداقل دو داده لازم است</small>';const W=320,H=120,p=16,mn=Math.min(...v),mx=Math.max(...v),r=mx-mn||1,P=v.map((y,i)=>[p+i*(W-2*p)/(v.length-1),H-p-(y-mn)/r*(H-2*p)]);
+return`<svg class=ch viewBox="0 0 ${W} ${H}"><polyline fill=none stroke="${c}" stroke-width=2 points="${P.map(q=>q.join(',')).join(' ')}"/>${P.map((q,i)=>`<circle cx=${q[0]} cy=${q[1]} r=4 fill="var(--card)" stroke="${c}" stroke-width=2><title>${lb[i]}: ${fa(v[i])}</title></circle>`).join('')}<text x=${p} y=9>${fa(mx)}</text><text x=${p} y=${H-2}>${fa(mn)}</text></svg>`}
+/* schedule */
+const UNI={6:[7.75,12.75],0:[7.75,10.75],1:[7.75,10.75],2:[7.75,17.75],4:[13.5,18.5]},WK={6:[13,19],1:[10,16],2:[16,22],3:[10,16]};
+const wk=d=>(d==4||d==5)?(S.cfg.tf=='m'?[10,16]:S.cfg.tf=='e'?[16,22]:null):WK[d];
+const tm=h=>{const m=Math.round(h%1*60);return fa(Math.floor(h))+':'+(m<10?'۰':'')+fa(m)};
+function sch(d){const f=[];if(UNI[d])f.push([...UNI[d],d==4?'کلاس MBA Finance':'دانشگاه','f']);const w=wk(d);if(w)f.push([...w,'کار','f']);f.sort((a,b)=>a[0]-b[0]);
+let bz=0,cf=0,e=0;f.forEach(x=>{if(x[0]<e)cf=1;bz+=Math.max(0,x[1]-Math.max(x[0],e));e=Math.max(e,x[1])});
+const it=[[6,6.5,'بیدار شدن · روتین صبح','']];let c=6.5;f.forEach(x=>{if(x[0]-c>=.75)it.push([c,x[0],'زمان آزاد / بافر (غذا، استراحت)','z']);it.push(x);c=Math.max(c,x[1])});
+const ns=Math.max(21.5,c);if(ns-c>=.75)it.push([c,ns,'زمان آزاد / شخصی','z']);it.push([ns,Math.max(22.5,ns+.5),'روتین شب · ~۲۰ صفحه مطالعه · خواب','']);return{it,bz,cf}}
+const sug=(b,e,d)=>b>=10?'روز سنگین است؛ فقط ۳ اولویت اصلی، ۱۰ صفحه مطالعه و ۱۵ دقیقه انگلیسی. بقیه را رها کن.':e==0?'انرژی کم: کار سبک مثل مرور لغات، ویدیوی انگلیسی یا پیاده‌روی؛ زودتر بخواب.':b<=5&&e==2?'روز مناسب کار عمیق: یک بلوک ۹۰ دقیقه‌ای برای تولید محتوا + یک تمرین.':'یک بلوک تمرکز ۴۵ دقیقه‌ای برای اولویت اول، ۲۰ دقیقه انگلیسی، و بقیه را آزاد بگذار.';
+const QT=['کوچک ولی هر روز.','تمرکز یعنی گفتن «نه» به چیزهای خوب.','امروز فقط بهترین نسخهٔ ممکنِ امروز باش.','سبک و پایدار، سریع و ناپایدار را شکست می‌دهد.','استراحت هم بخشی از برنامه است.','سبک شخصی از انضباط ساخته می‌شود.','پیشرفت یعنی امروز از دیروز کمی جلوتر.'];
+/* data helpers */
+const W_=()=>[...S.weights].sort((a,b)=>a.d<b.d?-1:1);
+function wst(){const W=W_();if(!W.length)return null;const c=W.at(-1),at=n=>{const o=W.filter(x=>ago(x.d)>=n);return o.at(-1)},p=at(ago(c.d)+7),m=at(ago(c.d)+30);return{c:c.kg,p:p?.kg,wk:p?c.kg-p.kg:null,all:c.kg-W[0].kg,mo:m?c.kg-m.kg:null}}
+const cur=()=>S.books.find(b=>!b.done),pgs=d=>S.pages.filter(x=>x.d==d).reduce((s,x)=>s+x.n,0);
+const engN=a=>S.english.filter(x=>inw(x.d,a)).length,wo=a=>S.workouts.filter(x=>inw(x.d,a)&&+x.ok).length;
+const mny=(k,a)=>S.expenses.filter(x=>x.kind==k&&inw(x.d,a)).reduce((s,x)=>s+x.amt,0);
+const mon=k=>S.expenses.filter(x=>x.kind==k&&x.d.slice(0,7)==td.slice(0,7)).reduce((s,x)=>s+x.amt,0);
+const dl=(a,b)=>{const d=b-a;return`<span class="${d>0?'up':d<0?'dn':''}">${d>0?'▲':d<0?'▼':'–'} ${fa(Math.abs(d))}</span>`};
+const task=t=>row('tasks',t.id,`<span onclick="A('tog','tasks','${t.id}')" style="cursor:pointer;${t.done?'text-decoration:line-through;opacity:.5':''}">${t.done?'☑':'☐'} ${t.t}</span>`,`${LN[t.lvl]||''}${t.due?' · '+fd(t.due):''}`);
+const goalC=g=>card(g.t,'c2',`<small>${g.why||''}</small>${bar(g.p)}<div class=st><span>${fa(g.p||0)}٪</span><span class=mut>${g.dl?'مهلت '+fd(g.dl):''}</span></div><small>الان: ${g.cur||'—'} ← هدف: ${g.tgt||'—'}</small><small>مراحل: ${g.ms||'—'}</small><small>قدم بعدی: ${g.next||'—'}</small><div style="margin-top:8px"><button class=sm onclick="gp('${g.id}',10)">+۱۰٪</button> <button class=sm onclick="gp('${g.id}',-10)">−۱۰٪</button> <button class=x onclick="A('del','goals','${g.id}')">حذف</button></div>`);
+let tab=0;
+function vPlan(){return`<h1>برنامه و اهداف</h1><div class=grid>${['must','should','opt'].map((l,i)=>card(LN[l],['c4','c2','c1'][i],S.tasks.filter(t=>t.lvl==l).map(task).join('')||'<small>خالی</small>')).join('')}</div><div class=chips>${btn('task')}${btn('goal')}</div><div class=grid>${['long','mid','short'].map(t=>S.goals.filter(g=>g.term==t).map(goalC).join('')).join('')}</div>`}
+function vGrow(){const b=S.books,d14=dys(14);return`<h1>رشد</h1><div class=grid>
+${card('مهارت‌های انگلیسی (ثبت جلسه با یک لمس)','c3',`<div class=chips style="flex-wrap:wrap">${SK.map(s=>`<button class=sm onclick="sess('${s}')">${s} ${fa(S.english.filter(x=>x.skill==s&&inw(x.d,0)).length)}</button>`).join('')}</div>`+line(d14.map(d=>S.english.filter(x=>x.d==d).length),d14.map(fd),'var(--c3)'),btn('english','منبع'))}
+${card('منابع و ویدیوها','c3',S.english.filter(x=>x.kind=='res').map(x=>row('english',x.id,(x.link?`<a href="${x.link}" target=_blank style="color:inherit">${x.title}</a>`:x.title),`${x.skill} · ${fd(x.d)}${x.vocab?' · '+x.vocab:''}`,`<button class=sm onclick="A('cyc','english','${x.id}')">${RS[x.st]}</button>`)).join('')||'<small>خالی</small>')}
+${card('مطالعه','c3',b.map(x=>row('books',x.id,`${x.title}`,`${x.author||''} · صفحه ${fa(x.page||0)}/${fa(x.total||0)} · هدف ${x.target?fd(x.target):'—'}`,`<b>${fa(x.total?x.page/x.total*100:0)}٪</b>`)).join('')||'<small>کتابی نیست</small>',btn('book')+' '+btn('page','صفحه'))}
+${card('صفحه‌های خوانده‌شده (۱۴ روز)','c3',line(d14.map(pgs),d14.map(fd),'var(--c3)'))}
+${card('یادگیری / MBA / ریسرچ','c6',S.research.map(r=>row('research',r.id,`${r.topic}: ${r.key||''}`,`${r.src||''} ${r.car?'· '+r.car:''}`)).join('')||'<small>موضوع‌ها: '+MB.join('، ')+'</small>',btn('research'))}
+</div>`}
+function vBody(){const w=wst(),W=W_(),ex=S.expenses,inc=mon('inc'),exp=mon('exp'),sv=mon('sav'),bd=S.cfg.budget,dy=S.daily.filter(x=>x.d==td).at(-1);
+const cats=CAT.map(c=>{const[a,n]=c.split('|');return[n,ex.filter(x=>x.kind=='exp'&&x.cat==a&&x.d.slice(0,7)==td.slice(0,7)).reduce((s,x)=>s+x.amt,0)]}),mx=Math.max(1,...cats.map(x=>x[1]));
+return`<h1>بدن و مالی</h1><div class=grid>
+${card('روند وزن','c4',(w?`<div class=st><span><b>${fa(w.c)}</b>فعلی</span><span><b>${w.p==null?'—':fa(w.p)}</b>هفتهٔ قبل</span><span><b>${w.wk==null?'—':fa(w.wk)}</b>هفتگی</span><span><b>${w.mo==null?'—':fa(w.mo)}</b>ماهانه</span><span><b>${fa(w.all)}</b>کل</span></div>`:'')+line(W.map(x=>x.kg),W.map(x=>fd(x.d)),'var(--c4)'),btn('weight'))}
+${card('ورزش','c4',`<div class=st><span><b>${fa(wo(0))}/۳–۴</b>این هفته</span></div>${bar(wo(0)/4*100)}`+S.workouts.slice(-5).reverse().map(x=>row('workouts',x.id,`${x.type} · ${fa(x.min||0)} دقیقه`,`${fd(x.d)} · ${+x.ok?'انجام شد':'رد شد'} ${x.note||''}`)).join(''),btn('workout'))}
+${card('ثبت روزانه (کالری، آب، مکمل)','c4',dy?`<div class=st><span><b>${fa(dy.cin||0)}</b>دریافتی</span><span><b>${fa(dy.cout||0)}</b>سوزانده</span><span><b>${fa(dy.water||0)}</b>لیوان آب</span></div><small>${dy.sup||''}</small>`:'<small>امروز چیزی ثبت نشده</small>',btn('daily'))}
+${card('مالی این ماه','c5',`<div class=st><span><b>${fa(inc)}</b>درآمد</span><span><b>${fa(exp)}</b>هزینه</span><span><b>${fa(sv)}</b>پس‌انداز</span><span><b>${bd?fa(bd-exp):'—'}</b>بودجهٔ باقی‌مانده</span></div>${bd?bar(exp/bd*100):''}<button class=sm onclick="const v=prompt('بودجه ماهانه؟');if(v){S.cfg.budget=+v;save();R()}">تنظیم بودجه</button>`,btn('expense','تراکنش'))}
+${card('هزینه بر اساس دسته','c5',cats.map(c=>`<small>${c[0]} · ${fa(c[1])}</small>${bar(c[1]/mx*100)}`).join(''))}
+${card('تراکنش‌های اخیر','c5',ex.slice(-6).reverse().map(x=>row('expenses',x.id,`${x.t}`,`${fd(x.d)} · ${x.pay||''}`,`<b class="${x.kind=='inc'?'up':''}">${x.kind=='inc'?'+':''}${fa(x.amt)}</b>`)).join('')||'<small>خالی</small>')}
+</div>`}
+function vMore(){const I=S.ideas,rw=[['وزن',()=>{const W=W_();const f=a=>{const o=W.filter(x=>ago(x.d)>=a*7).at(-1);return o?o.kg:0};return[f(1),f(0)]}],['جلسات انگلیسی',[engN(1),engN(0)]],['صفحه‌های خوانده‌شده',[1,0].map(a=>S.pages.filter(x=>inw(x.d,a)).reduce((s,x)=>s+x.n,0))],['تمرین‌ها',[wo(1),wo(0)]],['محتوای منتشرشده',[1,0].map(a=>I.filter(x=>x.st==3&&inw(x.pd,a)).length)],['درآمد',[mny('inc',1),mny('inc',0)]],['هزینه',[mny('exp',1),mny('exp',0)]],['پس‌انداز',[mny('sav',1),mny('sav',0)]],['کارهای انجام‌شده',[1,0].map(a=>S.tasks.filter(x=>inw(x.dd,a)).length)],['اهداف کامل‌شده',[1,0].map(a=>S.goals.filter(x=>inw(x.dd,a)).length)]];
+const lr=S.reviews.at(-1);
+return`<h1>محتوا، رویداد و مرور</h1><div class=grid>
+${card('مد، اینستاگرام و لینکدین','c6',`<small>تولید عمیق: ۲–۳ بار در هفته · لینکدین: ۲ پست در هفته · تعامل روزانه ۱۵–۲۰ دقیقه</small><div class=st><span><b>${fa(I.filter(x=>x.st==3&&inw(x.pd,0)&&x.kind!='لینکدین').length)}</b>منتشرشده</span><span><b>${fa(I.filter(x=>x.st==3&&inw(x.pd,0)&&x.kind=='لینکدین').length)}/۲</b>لینکدین</span></div>`+I.map(x=>row('ideas',x.id,x.t,`${x.kind}${x.plan?' · '+fd(x.plan):''}`,`<button class=sm onclick="A('cyc','ideas','${x.id}')">${ST[x.st||0]}</button>`)).join(''),btn('idea'))}
+${card('رویدادها','c6',S.events.sort((a,b)=>a.date<b.date?-1:1).map(e=>row('events',e.id,e.t,`${e.date?fd(e.date):''} · ${e.kind} · ${e.loc||''}${e.why?' · '+e.why:''}`)).join('')||'<small>خالی</small>',btn('event'))}
+${card('مقایسهٔ ۷ روز اخیر با ۷ روز قبل','c1',`<table><tr><th></th><th>قبل</th><th>اخیر</th><th>تغییر</th></tr>${rw.map(([l,v])=>{v=typeof v=='function'?v():v;return`<tr><td>${l}</td><td>${fa(v[0])}</td><td>${fa(v[1])}</td><td>${dl(v[0],v[1])}</td></tr>`}).join('')}</table>`)}
+${card('مرور هفتگی','c1',lr?`<small>${fd(lr.d)}</small><small>دستاورد: ${lr.w||'—'}</small><small>ماندم: ${lr.m||'—'}</small><small>هفتهٔ بعد: ${lr.nx||'—'}</small>`:'<small>هنوز مروری نیست</small>',btn('review','مرور جدید'))}
+${card('یادداشت‌ها','c1',S.notes.map(n=>row('notes',n.id,n.t,fd(n.d))).join('')||'<small>خالی</small>',btn('note'))}
+</div>`}
+S.done=S.done||{};S.cfg.ex=S.cfg.ex||[];let sec=null,dp=new Date().getDay();
+F.cls={n:'کلاس جدید',f:[['n','نام'],['day','روز','sel',['6|شنبه','0|یکشنبه','1|دوشنبه','2|سه‌شنبه','3|چهارشنبه','4|پنجشنبه','5|جمعه']],['s','شروع','time'],['e','پایان','time']]};
+const QL={task:'کار',expense:'هزینه',weight:'وزن',book:'کتاب',page:'صفحه کتاب',english:'منبع انگلیسی',idea:'ایده محتوا',event:'رویداد',workout:'ورزش',habit:'عادت',note:'یادداشت'};
+const qa=()=>{$('#fm').innerHTML=`<h2 style="--c:var(--c1)">افزودن سریع</h2><div style="display:flex;flex-wrap:wrap;gap:8px">${QA.map(t=>`<button onclick="open('${t}')">${QL[t]}</button>`).join('')}</div>`;$('#sh').style.display='flex'};
+const CN={eng:'انگلیسی',fit:'ورزش',fash:'فشن/محتوا',fin:'مالی/MBA',lin:'لینکدین',read:'مطالعه',spa:'اسپانیایی',ig:'اینستاگرام',admin:'امور شخصی',care:'مراقبت',pod:'پادکست'};
+const CC={eng:'c3',fit:'c4',fash:'c6',fin:'c5',lin:'c3',read:'c3',spa:'c2',ig:'c6',admin:'c1',care:'c4',pod:'c2'};
+const TG=[['eng',5,1],['fit',4,1],['fash',4,1],['fin',3,1],['lin',6,0],['read',6,0],['spa',4,0],['ig',6,0],['admin',2,0]];
+const RD=['مطالعه ~۲۰ صفحه','read'],IG=['اینستاگرام: استوری و تعامل','ig'],LI=['لینکدین ۱۵–۲۰ دقیقه','lin'];
+const TPL={
+6:{b:[],m:[['خواندن','read'],['اسپانیایی','spa'],['پادکست','pod'],['شنیدن انگلیسی','eng']],e:[['انگلیسی سبک ۴۵ دقیقه','eng'],LI,IG,RD]},
+0:{b:[[11.5,13,'انگلیسی متمرکز: گرامر، لغت، شنیدن، صحبت، مرور','eng','D'],[14,16,'فشن: ترند، برند، ایده و برنامه محتوا','fash','D'],[16,17.5,'پیلاتس / ورزش','fit','D'],[18.5,19.5,'مالی / MBA','fin','M']],m:[['پادکست/تاریخ','pod']],e:[LI,['اسپانیایی','spa'],IG,RD]},
+1:{b:[[11,12,'انگلیسی: صحبت، شنیدن، لغت','eng','M'],[12.75,13.5,'فشن سبک: ایده و استوری','fash','M'],[16.5,17.5,'مالی / MBA','fin','M']],m:[['خواندن','read'],['اسپانیایی','spa'],['پادکست','pod']],e:[LI,['خواندن انگلیسی سبک','eng'],['اسپانیایی','spa'],IG,RD]},
+2:{b:[],m:[['شنیدن انگلیسی ۲۰ دقیقه','eng'],['اسپانیایی ۱۵–۲۰ دقیقه','spa'],['مطالعه ۲۰–۳۰ دقیقه','read'],['مرور لغات (اختیاری)','eng']],e:[['دوش و اسکین‌کر','care'],['آماده‌سازی فردا','care']]},
+3:{b:[[6.5,8,'انگلیسی عمیق: گرامر، صحبت، شنیدن، لغت، نوشتن','eng','D'],[9,11,'فشن عمیق: فیلمبرداری، ادیت، تولید، ریسرچ','fash','D'],[11,12,'ورزش / پیلاتس','fit','D'],[13,14,'مالی / MBA','fin','M'],[15,16,'لینکدین: ریسرچ، نوشتن، آماده‌سازی یک پست','lin','M'],[16,17,'امور شخصی: ثبت مالی، برنامه‌ریزی، مرتب‌کردن اتاق','admin','M']],m:[['اسپانیایی/تاریخ/پادکست (اختیاری)','spa']],e:[IG,RD]},
+4:{b:[[6.5,7.5,'انگلیسی: شنیدن و صحبت','eng','M'],[8.5,10,'فشن: ترند، برند، صنعت، ایده','fash','D'],[10,11,'پیلاتس / ورزش','fit','D']],m:[['اسپانیایی','spa'],['پادکست','pod'],['کتاب صوتی/مطالعه','read']],e:[['مرور یادداشت‌های MBA','fin'],['لینکدین یا اینستاگرام','lin'],RD]},
+5:{b:[[6.5,8,'انگلیسی متمرکز','eng','D'],[9,10.5,'ورزش / پیلاتس','fit','D'],[11.5,13.5,'فشن: تولید، فیلمبرداری، ادیت، برنامه هفته بعد','fash','D'],[14.5,15.5,'مالی: ثبت هزینه‌ها، مرور بودجه، بازبینی هفتگی','fin','M']],m:[['اسپانیایی','spa'],['مطالعه','read'],['پادکست','pod']],e:[LI,IG,RD]}};
+const getT=d=>{const t=TPL[d];return{b:t.b,m:t.m,e:t.e}};
+function adapt(d){const fx=[];if(UNI[d])fx.push([...UNI[d],d==4?'کلاس MBA Finance':'دانشگاه']);const w=wk(d);if(w)fx.push([...w,'کار']);S.cfg.ex.filter(x=>x.d==d).forEach(x=>fx.push([x.s,x.e,x.n]));
+const t=getT(d),busy=fx.map(x=>[x[0],x[1]]),pl=[],un=[],free=(s,e)=>!busy.some(b=>s<b[1]&&e>b[0]);
+t.b.map((b,i)=>({b,i})).sort((p,q)=>(p.b[4]=='D'?0:1)-(q.b[4]=='D'?0:1)||p.b[0]-q.b[0]).forEach(({b,i})=>{const L=b[1]-b[0];let s=null;if(free(b[0],b[1]))s=b[0];else{for(let x=b[0];x+L<=21.5;x+=.25)if(free(x,x+L)){s=x;break}if(s==null)for(let x=6.5;x+L<=b[0];x+=.25)if(free(x,x+L)){s=x;break}}
+if(s==null)un.push(b);else{busy.push([s,s+L]);pl.push([s,s+L,b[2],'b'+i,b])}});
+return{fx,pl,un,t,bz:fx.reduce((s,x)=>s+x[1]-x[0],0)}}
+const ck=(date,id,l,dn,c,lv)=>`<div class=row onclick="chk('${date}','${id}')" style="cursor:pointer"><span style="color:var(--${CC[c]});font-size:18px">${dn.includes(id)?'◉':'○'}</span><div style="${dn.includes(id)?'opacity:.5;text-decoration:line-through':''}">${l}<small>${CN[c]}${lv=='D'?' · کار عمیق':lv=='M'?' · تمرکز متوسط':''}</small></div></div>`;
+const chk=(d,id)=>{const a=S.done[d]=S.done[d]||[],i=a.indexOf(id);i<0?a.push(id):a.splice(i,1);save();R()};
+function dayH(d,date){const a=adapt(d),dn=S.done[date]||[],it=[...a.fx.map(x=>[x[0],x[1],x[2],'x']),...a.pl].sort((p,q)=>p[0]-q[0]);let h='<div class=tl style="border-color:var(--c1)"><b>۶:۰۰</b> · بیدار شدن و روتین صبح</div>',c=6.5;
+it.forEach(x=>{if(x[0]-c>=1)h+=`<div class="tl z">آزاد / استراحت · ${tm(c)}–${tm(x[0])}</div>`;h+=x[3]=='x'?`<div class="tl f"><b>${tm(x[0])}–${tm(x[1])}</b> · ${x[2]}</div>`:ck(date,x[3],`<b>${tm(x[0])}–${tm(x[1])}</b> · ${x[2]}`,dn,x[4][3],x[4][4]);c=Math.max(c,x[1])});
+if(a.t.m.length)h+='<small style="margin-top:10px">در مسیر و زمان‌های کم‌انرژی</small>'+a.t.m.map((m,i)=>ck(date,'m'+i,m[0],dn,m[1])).join('');
+h+='<small style="margin-top:10px">عصر و شب</small>'+a.t.e.map((m,i)=>ck(date,'e'+i,m[0],dn,m[1])).join('')+'<div class="tl">روتین شب · آماده‌سازی فردا · خواب ۱۰–۱۱</div>';
+if(a.un.length)h+=`<small style="color:var(--c4);margin-top:10px">جا نشد؛ به روز دیگر منتقل کن:</small>`+a.un.map(b=>`<small>• ${b[2]}</small>`).join('');
+const ids=[...a.pl.map(x=>x[3]),...a.t.m.map((_,i)=>'m'+i),...a.t.e.map((_,i)=>'e'+i)];return{h,a,tot:ids.length,dn:ids.filter(i=>dn.includes(i)).length,dnl:dn}}
+const dFor=d=>{const i=x=>(x+1)%7,x=new Date();x.setDate(x.getDate()+i(d)-i(new Date().getDay()));return x.toLocaleDateString('sv-SE')};
+function vDay(){const d=new Date().getDay(),r=dayH(d,td),hb=(S.habits[td]||[]).length,pt=pgs(td),now=new Date().getHours()+new Date().getMinutes()/60,nx=r.a.pl.filter(x=>x[1]>now&&!r.dnl.includes(x[3])).sort((p,q)=>p[0]-q[0])[0],pc=r.tot?r.dn/r.tot*100:0;
+return`<small>${new Date().toLocaleDateString('fa-IR-u-ca-persian',{weekday:'long',day:'numeric',month:'long',year:'numeric'})}</small><h1>امروز</h1><div class=q>${QT[d]}</div>
+<div class=grid style="margin-top:12px">${card('آمار امروز','c1',`<div class=st><span><b>${fa(r.dn)}/${fa(r.tot)}</b>کارهای امروز</span><span><b>${fa(pt)}/۲۰</b>صفحه</span><span><b>${fa(hb)}/${fa(HB.length)}</b>عادت</span><span><b>${fa(r.a.bz)}</b>ساعت ثابت</span></div>${bar(pc)}${nx?`<small>بعدی: ${tm(nx[0])} · ${nx[2]}</small>`:''}`)}
+${card('پیشنهاد امروز','c5',`<div class=chips style="padding-top:0">${['کم','متوسط','زیاد'].map((x,i)=>`<button class="sm ${S.cfg.en==i?'on':''}" onclick="S.cfg.en=${i};save();R()">انرژی ${x}</button>`).join('')}</div>${d==2?'روز پرکار: فقط میکرو‌یادگیری و ثبات؛ کار سنگین نگذار.':sug(r.a.bz,S.cfg.en,d)}`)}
+${card('برنامهٔ امروز','c3',r.h,'')}</div>`}
+const N7=['یکشنبه','دوشنبه','سه‌شنبه','چهارشنبه','پنجشنبه','جمعه','شنبه'];
+let dt=td;const addD=(s,n)=>{const x=new Date(s+'T12:00');x.setDate(x.getDate()+n);return x.toLocaleDateString('sv-SE')},dowOf=s=>new Date(s+'T12:00').getDay(),fdn=s=>new Date(s+'T12:00').toLocaleDateString('fa-IR-u-ca-persian',{day:'numeric'});
+function vPlanner(){const d=dowOf(dt),st=addD(dt,-((d+1)%7)),wd=[0,1,2,3,4,5,6].map(i=>addD(st,i)),r=dayH(d,dt),c=S.cfg;
+return`<h1>برنامه</h1><div style="display:flex;gap:8px;justify-content:space-between"><button class=sm onclick="dt=addD(dt,-1);R()">→ روز قبل</button><button class=sm onclick="dt=td;R()">امروز</button><button class=sm onclick="dt=addD(dt,1);R()">روز بعد ←</button></div>
+<div class=chips style="gap:6px">${wd.map(s=>{const k=dayH(dowOf(s),s);return`<button class="${s==dt?'on':''}" style="flex:1;min-width:66px;padding:6px 4px;line-height:1.4;${s==td?'border-color:var(--c5);border-width:2px':''}" onclick="dt='${s}';R()">${N7[dowOf(s)]}<small style="color:inherit;opacity:.7">${fdn(s)} · ${fa(k.dn)}/${fa(k.tot)}</small></button>`}).join('')}</div>
+<div class=grid>${card(N7[d]+' · '+fd(dt)+(dt==td?' (امروز)':''),'c1',r.h,`<span>${fa(r.dn)}/${fa(r.tot)}</span>`)}
+<div>${card('شیفت پنجشنبه/جمعه','c5',`<button onclick="S.cfg.tf={m:'e',e:'o',o:'m'}[S.cfg.tf];save();R()">${{m:'صبح ۱۰–۱۶',e:'عصر ۱۶–۲۲',o:'مرخصی'}[c.tf]}</button><small>با تغییر شیفت، بلوک‌ها جابه‌جا می‌شوند و حذف نمی‌شوند.</small>`)}<div style="height:12px"></div>
+${card('کلاس‌های اضافه','c4',c.ex.map(x=>row('x',x.id,x.n,`${N7[x.d]} ${tm(x.s)}–${tm(x.e)}`).replace(`A('del','x','${x.id}')`,`S.cfg.ex=S.cfg.ex.filter(y=>y.id=='${x.id}'?0:1);save();R()`)).join('')||'<small>هنوز کلاسی اضافه نشده</small>',btn('cls','کلاس'))}</div></div>`}
+const catOf=(d,id)=>{const t=getT(new Date(d+'T12:00').getDay()),k=id[0],x=(t[k]||[])[+id.slice(1)];return x&&x[k=='b'?3:1]};
+const cnt=(c,a,f)=>{let n=0;Object.keys(S.done).forEach(d=>{if(inw(d,a))S.done[d].forEach(i=>{if(catOf(d,i)==c&&(!f||i[0]=='b'))n++})});return c=='fit'?Math.max(n,wo(a)):n};
+const pcw=a=>TG.reduce((s,[c,t,f])=>s+Math.min(1,cnt(c,a,f)/t),0)/TG.length*100;
+function vWeek(){const wk=[5,4,3,2,1,0];return`<h1>اهداف هفتگی</h1><div class=grid>${card('پیشرفت کلی','c1',`<div class=st><span><b>${fa(pcw(0))}٪</b>این هفته</span><span><b>${fa(pcw(1))}٪</b>هفتهٔ قبل</span></div>`+line(wk.map(pcw),wk.map(a=>a?'هفته −'+a:'این هفته'),'var(--c1)'))}
+${card('تحقق اهداف (۷ روز اخیر)','c3',TG.map(([c,t,f])=>{const n=cnt(c,0,f);return`<div style="--c:var(--${CC[c]})"><small>${CN[c]} · ${fa(n)}/${fa(t)} · هفتهٔ قبل ${fa(cnt(c,1,f))}${f?' · جلسهٔ متمرکز':''}</small>${bar(n/t*100)}</div>`}).join(''))}</div>`}
+const hC=()=>{const hb=S.habits[td]||[];return card('عادت‌های امروز','c2',`<div class=chips style="flex-wrap:wrap">${HB.map(h=>`<button class="sm ${hb.includes(h)?'on':''}" onclick="A('hab','${h}')">${h}</button>`).join('')}</div>`,`${fa(hb.length)}/${fa(HB.length)}`)};
+const pick=(v,t,ex)=>{const d=document.createElement('div');d.innerHTML=v();return[...d.querySelectorAll('.card')].filter(c=>{const h=c.querySelector('h2').firstChild.textContent.trim(),m=t.some(x=>h.startsWith(x));return ex?!m:m}).map(c=>c.outerHTML).join('')};
+const fld=t=>F[t].f.map(([k,l,ty,o])=>`<div${ty=='ta'?' style="grid-column:1/-1"':''}><label>${l}</label>${ty=='sel'?`<select name=${k}>${(typeof o=='function'?o():o).map(x=>{const[a,b]=x.split('|');return`<option value="${a}">${b||a}</option>`}).join('')}</select>`:ty=='ta'?`<textarea name=${k} rows=2></textarea>`:`<input name=${k} type=${ty||'text'} ${ty=='number'?'step=any inputmode=decimal':''} ${ty=='date'&&!['event','goal','book'].includes(t)?`value=${td}`:''}>`}</div>`).join('');
+const inl=(t,lb)=>`<details class=in><summary>＋ ${lb||F[t].n}</summary><div id="in_${t}" class=fg>${fld(t)}<button class=pri style="grid-column:1/-1" onclick="sub('${t}',document.getElementById('in_${t}'))">ثبت</button></div></details>`;
+const stt=a=>`<div class=st>${a.map(([n,l])=>`<span><b>${n}</b>${l}</span>`).join('')}</div>`,D14=()=>dys(14),lb=a=>a.map(fd);
+const sg=(l,k,f)=>l.filter(x=>x.d.slice(0,7)==td.slice(0,7)&&(!f||f(x))).reduce((s,x)=>s+(+x[k]||0),0);
+const sEng=()=>{const D=D14(),c=cnt('eng',0,1);return card('این هفته','c3',stt([[fa(c)+'/۵','جلسهٔ متمرکز'],[fa(engN(0)),'ثبت هفتگی'],[fa(ago(S.cfg.start))+'/۱۸۰','روز پروژه']])+bar(c/5*100))+card('ثبت جلسه با یک لمس','c3',`<div class=chips style="flex-wrap:wrap">${SK.map(s=>`<button class=sm onclick="sess('${s}')">${s} ${fa(S.english.filter(x=>x.skill==s&&inw(x.d,0)).length)}</button>`).join('')}</div>`)+card('روند ۱۴ روز','c3',line(D.map(d=>S.english.filter(x=>x.d==d).length),lb(D),'var(--c3)'))+card('منابع و ویدیوها','c3',inl('english','منبع جدید')+S.english.filter(x=>x.kind=='res').map(x=>row('english',x.id,x.link?`<a href="${x.link}" target=_blank style="color:inherit">${x.title}</a>`:x.title,`${x.skill} · ${fd(x.d)}${x.vocab?' · '+x.vocab:''}`,`<button class=sm onclick="A('cyc','english','${x.id}')">${RS[x.st]}</button>`)).join(''))};
+const sRead=()=>{const D=D14(),b=cur(),wp=S.pages.filter(x=>inw(x.d,0)).reduce((s,x)=>s+x.n,0),dl_=b&&b.target?Math.max(1,-ago(b.target)):0;return card('آمار مطالعه','c3',stt([[fa(pgs(td))+'/۲۰','امروز'],[fa(wp),'این هفته'],[fa(wp/7),'میانگین روزانه'],[fa(S.books.filter(x=>x.done).length),'کتاب تمام‌شده']])+bar(pgs(td)/20*100))+card('کتاب فعلی','c3',b?`<b>${b.title}</b><small>${b.author||''}</small>${bar(b.total?b.page/b.total*100:0)}<small>صفحهٔ ${fa(b.page||0)} از ${fa(b.total||0)}${dl_?` · برای رسیدن به هدف روزی ${fa((b.total-b.page)/dl_)} صفحه`:''}</small>`:'<small>کتابی ثبت نشده</small>')+card('صفحه‌های ۱۴ روز','c3',line(D.map(pgs),lb(D),'var(--c3)'))+card('ثبت','c3',inl('page','به‌روزرسانی صفحه')+inl('book','کتاب جدید')+S.books.map(x=>row('books',x.id,x.title,`${x.author||''} · ${fa(x.page||0)}/${fa(x.total||0)}`,`<b>${fa(x.total?x.page/x.total*100:0)}٪</b>`)).join(''))};
+const sFash=()=>{const I=S.ideas,D=D14(),pw=I.filter(x=>x.st==3&&inw(x.pd,0)),mx=Math.max(1,I.length);return card('آمار محتوا','c6',stt([[fa(cnt('fash',0,1))+'/۴','جلسهٔ فشن'],[fa(pw.length),'منتشرشده'],[fa(pw.filter(x=>x.kind=='لینکدین').length)+'/۲','لینکدین'],[fa(cnt('ig',0)),'اینستاگرام']]))+card('مراحل تولید','c6',ST.map((s,i)=>{const n=I.filter(x=>(x.st||0)==i).length;return`<small>${s} · ${fa(n)}</small>${bar(n/mx*100)}`}).join(''))+card('انتشار ۱۴ روز','c6',line(D.map(d=>I.filter(x=>x.pd==d).length),lb(D),'var(--c6)'))+card('ایده‌ها','c6',inl('idea')+I.map(x=>row('ideas',x.id,x.t,`${x.kind}${x.plan?' · '+fd(x.plan):''}`,`<button class=sm onclick="A('cyc','ideas','${x.id}')">${ST[x.st||0]}</button>`)).join(''))};
+const sFit=()=>{const w=wst(),W=W_(),D=D14();return card('روند وزن','c4',(w?stt([[fa(w.c),'فعلی'],[w.p==null?'—':fa(w.p),'هفتهٔ قبل'],[w.wk==null?'—':fa(w.wk),'هفتگی'],[w.mo==null?'—':fa(w.mo),'ماهانه'],[fa(w.all),'کل']]):'')+line(W.map(x=>x.kg),W.map(x=>fd(x.d)),'var(--c4)')+inl('weight'))+card('ورزش','c4',stt([[fa(wo(0))+'/۴','تمرین این هفته'],[fa(S.workouts.filter(x=>inw(x.d,0)&&+x.ok).reduce((s,x)=>s+(+x.min||0),0)),'دقیقه']])+bar(wo(0)/4*100)+line(D.map(d=>S.workouts.filter(x=>x.d==d&&+x.ok).reduce((s,x)=>s+(+x.min||0),0)),lb(D),'var(--c4)')+inl('workout')+S.workouts.slice(-5).reverse().map(x=>row('workouts',x.id,`${x.type} · ${fa(x.min||0)} دقیقه`,`${fd(x.d)} · ${+x.ok?'انجام شد':'رد شد'} ${x.note||''}`)).join(''))+card('کالری، آب و مکمل','c4',stt([[fa(sg(S.daily,'water')),'لیوان آب (ماه)'],[fa(sg(S.daily,'cin')),'کالری دریافتی'],[fa(sg(S.daily,'cout')),'کالری سوزانده']])+inl('daily'))};
+const sMon=()=>{const ex=S.expenses,inc=mon('inc'),exp=mon('exp'),sv=mon('sav'),bd=S.cfg.budget,D=D14(),cats=CAT.map(c=>{const[a,n]=c.split('|');return[n,ex.filter(x=>x.kind=='exp'&&x.cat==a&&x.d.slice(0,7)==td.slice(0,7)).reduce((s,x)=>s+x.amt,0)]}),mx=Math.max(1,...cats.map(x=>x[1]));return card('این ماه','c5',stt([[fa(inc),'درآمد'],[fa(exp),'هزینه'],[fa(sv),'پس‌انداز'],[bd?fa(bd-exp):'—','بودجهٔ باقی‌مانده']])+(bd?bar(exp/bd*100):'')+`<button class=sm onclick="const v=prompt('بودجه ماهانه؟');if(v){S.cfg.budget=+v;save();R()}">تنظیم بودجه</button>`)+card('هزینه روزانه (۱۴ روز)','c5',line(D.map(d=>ex.filter(x=>x.d==d&&x.kind=='exp').reduce((s,x)=>s+x.amt,0)),lb(D),'var(--c5)'))+card('بر اساس دسته','c5',cats.map(c=>`<small>${c[0]} · ${fa(c[1])}</small>${bar(c[1]/mx*100)}`).join(''))+card('تراکنش‌ها','c5',inl('expense')+ex.slice(-8).reverse().map(x=>row('expenses',x.id,x.t,`${fd(x.d)} · ${x.pay||''}`,`<b class="${x.kind=='inc'?'up':''}">${x.kind=='inc'?'+':''}${fa(x.amt)}</b>`)).join(''))};
+const sLearn=()=>{const R_=S.research,mx=Math.max(1,...MB.map(m=>R_.filter(r=>r.topic==m).length));return card('MBA و یادگیری','c5',stt([[fa(cnt('fin',0,1))+'/۳','جلسهٔ مالی'],[fa(R_.length),'یادداشت'],[fa(R_.filter(r=>inw(r.d,0)).length),'این هفته']]))+card('موضوع‌ها','c5',MB.map(m=>{const n=R_.filter(r=>r.topic==m).length;return`<small>${m} · ${fa(n)}</small>${bar(n/mx*100)}`}).join(''))+card('یادداشت‌ها','c5',inl('research')+R_.map(r=>row('research',r.id,`${r.topic}: ${r.key||''}`,`${r.src||''} ${r.car?'· '+r.car:''}`)).join(''))};
+const sGoal=()=>{const g=S.goals,av=g.length?g.reduce((s,x)=>s+(+x.p||0),0)/g.length:0;return card('اهداف','c2',stt([[fa(av)+'٪','میانگین پیشرفت'],[fa(g.length),'هدف'],[fa(g.filter(x=>x.p>=100).length),'کامل‌شده']])+bar(av)+inl('goal'))+[['long','بلندمدت'],['mid','میان‌مدت'],['short','کوتاه‌مدت']].map(([t,n])=>g.filter(x=>x.term==t).length?`<h2 class=wide style="--c:var(--c2)">${n}</h2>`+g.filter(x=>x.term==t).map(goalC).join(''):'').join('')};
+const sTask=()=>{const T=S.tasks;return card('کارها','c1',stt([...['must','should','opt'].map(l=>[fa(T.filter(t=>t.lvl==l&&!t.done).length),LN[l]]),[fa(T.filter(t=>inw(t.dd,0)).length),'انجام‌شده این هفته']])+inl('task'))+['must','should','opt'].map((l,i)=>card(LN[l],['c4','c2','c1'][i],T.filter(t=>t.lvl==l).map(task).join('')||'<small>خالی</small>')).join('')};
+const sCare=()=>{const D=dys(7),hb=S.habits[td]||[];return hC()+card('عادت‌ها در ۷ روز اخیر','c2',line(D.map(d=>(S.habits[d]||[]).length),lb(D),'var(--c2)'))};
+const sEv=()=>{const E=S.events.sort((a,b)=>a.date<b.date?-1:1),up=E.filter(e=>e.date>=td);return card('رویدادها','c6',stt([[fa(up.length),'پیش‌رو'],[fa(up.filter(e=>ago(e.date)>-7).length),'این هفته']])+inl('event')+E.map(e=>row('events',e.id,e.t,`${e.date?fd(e.date):''} · ${e.kind} · ${e.loc||''}${e.why?' · '+e.why:''}`)).join(''))};
+const sRev=()=>{const lr=S.reviews.at(-1),w=wst(),rw=[...TG.map(([c,t,f])=>[CN[c],cnt(c,1,f),cnt(c,0,f)]),['درآمد',mny('inc',1),mny('inc',0)],['هزینه',mny('exp',1),mny('exp',0)],['پس‌انداز',mny('sav',1),mny('sav',0)]];return card('مقایسهٔ ۷ روز اخیر با قبل','c1',`<table><tr><th></th><th>قبل</th><th>اخیر</th><th>تغییر</th></tr>${rw.map(r=>`<tr><td>${r[0]}</td><td>${fa(r[1])}</td><td>${fa(r[2])}</td><td>${dl(r[1],r[2])}</td></tr>`).join('')}</table>`)+card('مرور هفتگی','c1',(lr?`<small>${fd(lr.d)}</small><small>دستاورد: ${lr.w||'—'}</small><small>ماندم: ${lr.m||'—'}</small><small>هفتهٔ بعد: ${lr.nx||'—'}</small>`:'')+inl('review','مرور جدید'))};
+const sNote=()=>card('یادداشت‌ها','c1',inl('note')+S.notes.map(n=>row('notes',n.id,n.t,fd(n.d))).join(''));
+const SEC=[{k:'eng',n:'انگلیسی',c:'c3',f:sEng,m:()=>fa(cnt('eng',0,1))+'/۵ جلسه'},{k:'read',n:'مطالعه',c:'c3',f:sRead,m:()=>fa(pgs(td))+'/۲۰ صفحه'},{k:'fash',n:'فشن و محتوا',c:'c6',f:sFash,m:()=>fa(cnt('fash',0,1))+'/۴ جلسه'},{k:'ev',n:'رویدادها',c:'c6',f:sEv,m:()=>fa(S.events.filter(e=>e.date>=td).length)+' پیش‌رو'},{k:'fit',n:'ورزش و وزن',c:'c4',f:sFit,m:()=>fa(wo(0))+'/۴ تمرین'},{k:'mon',n:'مالی شخصی',c:'c5',f:sMon,m:()=>fa(mon('exp'))+' هزینه'},{k:'learn',n:'MBA و یادگیری',c:'c5',f:sLearn,m:()=>fa(cnt('fin',0,1))+'/۳ جلسه'},{k:'goal',n:'اهداف',c:'c2',f:sGoal,m:()=>fa(S.goals.length)+' هدف'},{k:'task',n:'کارها',c:'c1',f:sTask,m:()=>fa(S.tasks.filter(t=>!t.done).length)+' باز'},{k:'care',n:'عادت‌ها',c:'c2',f:sCare,m:()=>fa((S.habits[td]||[]).length)+'/'+fa(HB.length)},{k:'rev',n:'مرور هفتگی',c:'c1',f:sRev,m:()=>fa(pcw(0))+'٪ هدف هفته'},{k:'note',n:'یادداشت‌ها',c:'c1',f:sNote,m:()=>fa(S.notes.length)+' مورد'}];
+const vTiles=()=>`<h1>بخش‌ها</h1><div class=tiles>${SEC.map(s=>`<button class=tile style="--c:var(--${s.c})" onclick="sec='${s.k}';R();scrollTo(0,0)">${s.n}<small>${s.m()}</small></button>`).join('')}</div>`;
+const vSec=()=>{const s=SEC.find(x=>x.k==sec);return`<button class=sm onclick="sec=null;R()">→ بخش‌ها</button><h1>${s.n}</h1><div class=grid>${s.f()}</div>`};
+function R(){const h=[vDay,vPlanner,vWeek,()=>sec?vSec():vTiles()][tab]();$('#app').innerHTML=h;$('#nv').innerHTML=['امروز','برنامه','هفته','بخش‌ها'].map((n,i)=>`<button class="${tab==i?'on':''}" onclick="tab=${i};sec=null;R();scrollTo(0,0)">${n}</button>`).join('')}
+R();
+</script></body></html>
